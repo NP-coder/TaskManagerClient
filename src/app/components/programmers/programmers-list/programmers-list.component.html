@@ -1,0 +1,22 @@
+<div class="container my-5">
+    <h1 class="mb-3">Programmers </h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Email</th>
+                <th>Password </th>
+                <th>Role</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let programmer of programmers">
+                <td>{{programmer.id}}</td>
+                <td>{{programmer.email}}</td>
+                <td>{{programmer.password}}</td>
+                <td>{{programmer.roleId}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
